@@ -41,7 +41,7 @@ export default function Loans() {
             key={t}
             onClick={() => setActiveType(t)}
             className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-colors ${
-              activeType === t ? 'bg-ink text-paper border-ink' : 'bg-white text-ink/70 border-line hover:border-ink/30'
+              activeType === t ? 'bg-primary text-paper border-primary' : 'bg-white text-ink/70 border-line hover:border-ink/30'
             }`}
           >
             {loanTypeInfo[t].icon} {t}
@@ -119,7 +119,7 @@ export default function Loans() {
               <LedgerNumber label="Total repayment" value={inr(emiResult.totalPayment)} />
               <LedgerNumber label="Current FOIR" value={pct(eligibility.currentFOIRPct)} accent={eligibility.currentFOIRPct > 50 ? 'brick' : 'teal'} />
             </div>
-            <div className="bg-ink text-paper rounded-card p-6">
+            <div className="bg-primary text-paper rounded-card p-6">
               <p className="text-xs uppercase tracking-wide text-gold-light font-semibold">Indicative eligible loan amount</p>
               <p className="font-mono text-3xl font-semibold mt-1 tabular">{inr(eligibility.indicativeEligibleAmount)}</p>
               <p className="text-sm text-paper/55 mt-2">

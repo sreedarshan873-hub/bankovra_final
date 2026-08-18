@@ -24,7 +24,7 @@ export default function BankDetail() {
 
       <div className="mt-4 flex flex-wrap items-start justify-between gap-4">
         <div className="flex items-center gap-4">
-          <div className="w-14 h-14 shrink-0 rounded-xl bg-ink text-gold-light flex items-center justify-center font-display font-semibold text-lg">
+          <div className="w-14 h-14 shrink-0 rounded-xl bg-primary text-gold-light flex items-center justify-center font-display font-semibold text-lg">
             {bank.shortName.slice(0, 2).toUpperCase()}
           </div>
           <div>
@@ -39,7 +39,7 @@ export default function BankDetail() {
           >
             ★ Save to Dashboard
           </button>
-          <a href={bank.officialWebsite} target="_blank" rel="noopener noreferrer" className="px-4 py-2.5 rounded-md bg-ink text-paper text-sm font-semibold hover:bg-navy-700">
+          <a href={bank.officialWebsite} target="_blank" rel="noopener noreferrer" className="px-4 py-2.5 rounded-md bg-primary text-paper text-sm font-semibold hover:bg-navy-700">
             Official website ↗
           </a>
         </div>

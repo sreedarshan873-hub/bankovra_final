@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 * {
   scrollbar-width: thin;
@@ -31,30 +34,30 @@ body {
 }
 
 .input {
-  @apply px-3 py-2.5 rounded-sm border border-line bg-white text-sm w-full focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold;
-  font-family: 'Segoe UI', sans-serif;
+  @apply px-3 py-2.5 rounded-sm border border-line bg-white text-sm w-full focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary;
+  font-family: Inter, sans-serif;
 }
 
 /* Professional button styling */
 button {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 500;
 }
 
 /* Focus visibility */
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, [tabindex]:focus-visible {
-  outline: 2px solid #FF6B35;
+  outline: 2px solid #1656C0;
   outline-offset: 2px;
 }
 
 ::selection {
-  background: #FFB399;
-  color: #001F3F;
+  background: #E3F2FD;
+  color: #0D1B2E;
 }
 
 .stamp {
-  border: 1.5px solid #FF6B35;
-  color: #FF6B35;
+  border: 1.5px solid #1656C0;
+  color: #1656C0;
 }
 
 /* Heading styles */

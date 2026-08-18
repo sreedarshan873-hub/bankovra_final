@@ -4,47 +4,50 @@ export default {
   theme: {
     extend: {
       colors: {
-        // SBI ePay Official Color Theme
-        ink: '#333333',      // Dark gray text
+        // BANKOVRA blue theme
+        ink: '#1E293B',
         navy: {
-          DEFAULT: '#061B6B', // SBI Deep Navy (Official)
-          700: '#040F48',     // Darker shade
-          900: '#020728',     // Darkest shade
+          DEFAULT: '#0D1B2E',
+          700: '#0D1B2E',
+          900: '#0D1B2E',
         },
-        paper: '#FFFFFF',    // Pure white background
-        line: '#F0F0F0',      // Light gray lines
+        primary: '#1656C0',
+        sky: '#42A5F5',
+        lightblue: '#E3F2FD',
+        paper: '#F8FAFC',
+        line: '#E3F2FD',
         gold: {
-          DEFAULT: '#0FB3F5', // SBI Bright Cyan accent
-          light: '#6594FF',   // Light blue
-          dark: '#0A7BA8',    // Dark cyan
+          DEFAULT: '#1656C0',
+          light: '#E3F2FD',
+          dark: '#1656C0',
         },
         teal: {
-          DEFAULT: '#0FB3F5', // Cyan highlight
-          light: '#E0F7FF',   // Very light cyan background
+          DEFAULT: '#1656C0',
+          light: '#E3F2FD',
         },
         brick: {
-          DEFAULT: '#D84315', // Alert red
-          light: '#FFEBEE',   // Light red background
+          DEFAULT: '#1656C0',
+          light: '#E3F2FD',
         },
         success: {
-          DEFAULT: '#2E7D32', // Success green
-          light: '#E8F5E9',   // Light green background
+          DEFAULT: '#1656C0',
+          light: '#E3F2FD',
         },
       },
       fontFamily: {
-        display: ['"Segoe UI"', '"Trebuchet MS"', 'sans-serif'],
-        sans: ['"Segoe UI"', '"Roboto"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        display: ['Inter', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
         mono: ['"Courier New"', 'monospace'],
       },
       backgroundImage: {
         ledger: 'none', // Remove vintage ledger styling
       },
       boxShadow: {
-        card: '0 2px 8px rgba(26,58,90,0.08), 0 4px 16px rgba(26,58,90,0.12)',
-        header: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+        card: '0 4px 16px rgba(13, 27, 46, 0.08)',
+        header: '0 1px 10px rgba(13, 27, 46, 0.07)',
       },
       borderRadius: {
-        card: '4px',
+        card: '8px',
       },
     },
   },

@@ -29,7 +29,7 @@ export default function ChargesFinder() {
             key={b.id}
             onClick={() => setBankId(b.id)}
             className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-colors ${
-              bankId === b.id ? 'bg-ink text-paper border-ink' : 'bg-white text-ink/70 border-line hover:border-ink/30'
+              bankId === b.id ? 'bg-primary text-paper border-primary' : 'bg-white text-ink/70 border-line hover:border-ink/30'
             }`}
           >
             {b.shortName}
@@ -40,7 +40,7 @@ export default function ChargesFinder() {
       <div className="mt-8 rounded-card border border-line bg-white p-6">
         <div className="flex items-center justify-between flex-wrap gap-2">
           <h3 className="font-display text-xl font-semibold text-ink">{bank.name}</h3>
-          <Link to={`/banks/${bank.id}`} className="text-sm font-semibold text-teal hover:underline">Full bank profile →</Link>
+          <Link to={`/banks/${bank.id}`} className="text-sm font-semibold text-teal hover:underline">Full bank profile â†’</Link>
         </div>
 
         <div className="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

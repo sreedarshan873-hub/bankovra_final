@@ -48,7 +48,7 @@ export default function Investments() {
             key={c}
             onClick={() => setCategory(c)}
             className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-colors ${
-              category === c ? 'bg-ink text-paper border-ink' : 'bg-white text-ink/70 border-line hover:border-ink/30'
+              category === c ? 'bg-primary text-paper border-primary' : 'bg-white text-ink/70 border-line hover:border-ink/30'
             }`}
           >
             {c}

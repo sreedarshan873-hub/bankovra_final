@@ -9,7 +9,7 @@ export default function NotFound() {
         The page you're looking for may have moved. Head back to the homepage or explore the Bank Directory.
       </p>
       <div className="mt-8 flex items-center justify-center gap-3">
-        <Link to="/" className="rounded-md bg-ink text-paper px-5 py-2.5 text-sm font-semibold hover:bg-navy-700">
+        <Link to="/" className="rounded-md bg-primary text-paper px-5 py-2.5 text-sm font-semibold hover:bg-navy-700">
           Go home
         </Link>
         <Link to="/banks" className="rounded-md border border-line px-5 py-2.5 text-sm font-semibold text-ink hover:border-ink/30">

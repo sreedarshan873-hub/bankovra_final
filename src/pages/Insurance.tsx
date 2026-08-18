@@ -30,7 +30,7 @@ export default function Insurance() {
             key={t}
             onClick={() => setActive(t)}
             className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-colors ${
-              active === t ? 'bg-ink text-paper border-ink' : 'bg-white text-ink/70 border-line hover:border-ink/30'
+              active === t ? 'bg-primary text-paper border-primary' : 'bg-white text-ink/70 border-line hover:border-ink/30'
             }`}
           >
             {typeInfo[t].icon} {t}

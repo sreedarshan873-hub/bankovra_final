@@ -20,7 +20,7 @@ export default function BankCard({ bank, compact = false }: { bank: Bank; compac
     <div className="rounded-card border border-line bg-white shadow-card p-5 flex flex-col h-full">
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3">
-          <div className="w-11 h-11 shrink-0 rounded-lg bg-ink text-gold-light flex items-center justify-center font-display font-semibold text-sm">
+          <div className="w-11 h-11 shrink-0 rounded-lg bg-primary text-gold-light flex items-center justify-center font-display font-semibold text-sm">
             {bank.shortName.slice(0, 2).toUpperCase()}
           </div>
           <div>

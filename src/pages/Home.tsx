@@ -43,7 +43,7 @@ export default function Home() {
               or insurance product — with transparent scoring and sourced, dated figures.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/find-bank" className="px-5 py-3 rounded-md bg-ink text-paper font-semibold text-sm hover:bg-navy-700 transition-colors">
+              <Link to="/find-bank" className="px-5 py-3 rounded-md bg-primary text-paper font-semibold text-sm hover:bg-navy-700 transition-colors">
                 Find my right bank →
               </Link>
               <Link to="/compare" className="px-5 py-3 rounded-md border border-line bg-white text-ink font-semibold text-sm hover:border-ink/30 transition-colors">
@@ -114,7 +114,7 @@ export default function Home() {
 
       {/* AI assistant CTA */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-24">
-        <div className="rounded-card bg-ink text-paper p-8 sm:p-12 grid lg:grid-cols-2 gap-8 items-center relative overflow-hidden">
+        <div className="rounded-card bg-primary text-paper p-8 sm:p-12 grid lg:grid-cols-2 gap-8 items-center relative overflow-hidden">
           <div className="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-gold/10" />
           <div className="relative">
             <p className="text-xs font-semibold tracking-[0.14em] uppercase text-gold-light mb-3">BANKOVRA AI Assistant</p>

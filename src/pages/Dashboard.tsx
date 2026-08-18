@@ -64,7 +64,7 @@ export default function Dashboard() {
             placeholder="e.g. Check HDFC FD rate before 30 Sept"
             className="flex-1 rounded-md border border-line px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40"
           />
-          <button type="submit" className="rounded-md bg-ink text-paper px-4 py-2 text-sm font-semibold hover:bg-navy-700">
+          <button type="submit" className="rounded-md bg-primary text-paper px-4 py-2 text-sm font-semibold hover:bg-navy-700">
             Save alert
           </button>
         </form>
@@ -77,7 +77,7 @@ export default function Dashboard() {
             key={t.key}
             onClick={() => setTab(t.key)}
             className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-colors ${
-              tab === t.key ? 'bg-ink text-paper border-ink' : 'bg-white text-ink/70 border-line hover:border-ink/30'
+              tab === t.key ? 'bg-primary text-paper border-primary' : 'bg-white text-ink/70 border-line hover:border-ink/30'
             }`}
           >
             {t.label} {t.key !== 'all' && `(${items.filter((i) => i.type === t.key).length})`}

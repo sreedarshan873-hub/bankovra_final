@@ -63,7 +63,7 @@ export default function AIAssistant() {
             <div key={m.id} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
               <div
                 className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
-                  m.role === 'user' ? 'bg-ink text-paper rounded-br-sm' : 'bg-paper border border-line text-ink/85 rounded-bl-sm'
+                  m.role === 'user' ? 'bg-primary text-paper rounded-br-sm' : 'bg-paper border border-line text-ink/85 rounded-bl-sm'
                 }`}
               >
                 <p className="whitespace-pre-line">{m.text}</p>
@@ -106,7 +106,7 @@ export default function AIAssistant() {
               placeholder="Type your question…"
               className="flex-1 rounded-md border border-line px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40"
             />
-            <button type="submit" className="rounded-md bg-ink text-paper px-4 py-2.5 text-sm font-semibold hover:bg-navy-700">
+            <button type="submit" className="rounded-md bg-primary text-paper px-4 py-2.5 text-sm font-semibold hover:bg-navy-700">
               Send
             </button>
           </form>

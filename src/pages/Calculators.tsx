@@ -35,7 +35,7 @@ export default function Calculators() {
             key={c.id}
             onClick={() => setActive(c.id)}
             className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-colors ${
-              active === c.id ? 'bg-ink text-paper border-ink' : 'bg-white text-ink/70 border-line hover:border-ink/30'
+              active === c.id ? 'bg-primary text-paper border-primary' : 'bg-white text-ink/70 border-line hover:border-ink/30'
             }`}
           >
             {c.label}

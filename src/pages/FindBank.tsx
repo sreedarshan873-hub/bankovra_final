@@ -111,7 +111,7 @@ export default function FindBank() {
 
         <div className="sm:col-span-2 lg:col-span-3 flex items-center justify-between flex-wrap gap-3 pt-2">
           <p className="text-xs text-ink/40">Fields marked required are used most heavily in scoring.</p>
-          <button type="submit" disabled={!canSubmit} className="px-6 py-3 rounded-md bg-ink text-paper font-semibold text-sm hover:bg-navy-700 disabled:opacity-40 disabled:cursor-not-allowed">
+          <button type="submit" disabled={!canSubmit} className="px-6 py-3 rounded-md bg-primary text-paper font-semibold text-sm hover:bg-navy-700 disabled:opacity-40 disabled:cursor-not-allowed">
             Get my Match Score →
           </button>
         </div>

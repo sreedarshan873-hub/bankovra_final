@@ -49,7 +49,7 @@ export default function Compare() {
             onClick={() => toggle(b.id)}
             disabled={!selected.includes(b.id) && selected.length >= 4}
             className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-colors disabled:opacity-30 disabled:cursor-not-allowed ${
-              selected.includes(b.id) ? 'bg-ink text-paper border-ink' : 'bg-white text-ink/70 border-line hover:border-ink/30'
+              selected.includes(b.id) ? 'bg-primary text-paper border-primary' : 'bg-white text-ink/70 border-line hover:border-ink/30'
             }`}
           >
             {b.shortName}
