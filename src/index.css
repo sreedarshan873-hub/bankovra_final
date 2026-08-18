@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+  font-feature-settings: "tnum" 1;
+}
+
+.font-display {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* Professional card styling */
+.bg-ledger-lines {
+  @apply bg-white;
+  background-image: none;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.input {
+  @apply px-3 py-2.5 rounded-sm border border-line bg-white text-sm w-full focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Professional button styling */
+button {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+}
+
+/* Focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #FF6B35;
+  outline-offset: 2px;
+}
+
+::selection {
+  background: #FFB399;
+  color: #001F3F;
+}
+
+.stamp {
+  border: 1.5px solid #FF6B35;
+  color: #FF6B35;
+}
+
+/* Heading styles */
+h1 {
+  @apply font-semibold tracking-tight;
+}
+
+h2 {
+  @apply font-semibold tracking-tight;
+}
+
+h3 {
+  @apply font-semibold;
+}
+
+h4, h5, h6 {
+  @apply font-semibold;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

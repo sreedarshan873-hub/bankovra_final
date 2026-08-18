@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+
+# Environment variables - NEVER commit these
+.env.local
+.env.*.local
+.env
